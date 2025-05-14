@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acasă – Vânătoare</title>
+  <link rel="stylesheet" href="css/stil.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <div class="language-bar">
+      <span>Limba:</span>
+      <a href="index_ro.html"><img src="imagini/ro.png" alt="Română" /></a>
+      <a href="index_hu.html"><img src="imagini/hu.png" alt="Magyar" /></a>
+      <a href="index_en.html"><img src="imagini/en.png" alt="English" /></a>
+    </div>
+    <div class="switch-container">
+      <button onclick="toggleDarkMode()">🌙 Mod întunecat</button>
+    </div>
+  </div>
+
+  <header>
+    <img src="imagini/antet.jpg" alt="Imagine antet" class="banner" />
+    <h1>Bine ai venit în lumea vânătorii!</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Acasă</a></li>
+      <li><a href="animale.html">Animalele noastre</a></li>
+      <li><a href="noutati.html">Noutăți</a></li>
+      <li class="dropdown">
+        <a href="tarife.html">Tarife ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Vânătoare</a></li>
+          <li><a href="#">Cazare</a></li>
+          <li><a href="#">Transport</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="despre">
+      <h2>Despre vânătoare</h2>
+      <p>Vânătoarea este o activitate tradițională care reflectă respectul față de natură și echilibrul ecosistemului.</p>
+      <ul>
+        <li>Respectă perioadele de protecție și speciile interzise.</li>
+        <li>Nu vâna niciodată fără autorizație legală.</li>
+        <li>Folosește doar echipament omologat și în stare bună.</li>
+        <li>Fii atent la siguranța ta și a celor din jur.</li>
+      </ul>
+    </section>
+
+    <section class="sfaturi">
+      <h2>Recomandări pentru vânători începători</h2>
+      <ol>
+        <li>Informează-te despre zona de vânătoare.</li>
+        <li>Fă recunoaștere înainte de ziua vânătorii.</li>
+        <li>Respectă natura și animalele.</li>
+        <li>Nu merge niciodată singur în zone necunoscute.</li>
+        <li>Fii calm, răbdător și bine pregătit.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Site Vânătoare – Pagina principală</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animalele noastre</title>
+  <link rel="stylesheet" href="css/stil.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <div class="language-bar">
+      <span>Limba:</span>
+      <a href="index_ro.html"><img src="imagini/ro.png" alt="Română" /></a>
+      <a href="index_hu.html"><img src="imagini/hu.png" alt="Magyar" /></a>
+      <a href="index_en.html"><img src="imagini/en.png" alt="English" /></a>
+    </div>
+    <div class="switch-container">
+      <button onclick="toggleDarkMode()">🌙 Mod întunecat</button>
+    </div>
+  </div>
+
+  <header>
+    <img src="imagini/antet.jpg" alt="Imagine antet" class="banner" />
+    <h1>Animalele sălbatice din pădurile noastre</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Acasă</a></li>
+      <li><a href="animale.html" class="active">Animalele noastre</a></li>
+      <li><a href="noutati.html">Noutăți</a></li>
+      <li class="dropdown">
+        <a href="tarife.html">Tarife ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Vânătoare</a></li>
+          <li><a href="#">Cazare</a></li>
+          <li><a href="#">Transport</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="galerie" id="lista-animale">
+      <div class="animal">
+        <img src="imagini/cerb_dam.jpg" alt="Cerb lopătar" />
+        <h3>Cerb lopătar</h3>
+        <p>Animal nobil, specific zonelor de deal și munte.</p>
+      </div>
+      <div class="animal">
+        <img src="imagini/caprioara.jpg" alt="Caprioară" />
+        <h3>Caprioară</h3>
+        <p>Gingașă și atentă, simbol al pădurii.</p>
+      </div>
+      <div class="animal">
+        <img src="imagini/vulpe.jpg" alt="Vulpe" />
+        <h3>Vulpe</h3>
+        <p>Inteligență și agilitate într-o singură creatură.</p>
+      </div>
+      <div class="animal">
+        <img src="imagini/bursuc.jpg" alt="Bursuc" />
+        <h3>Bursuc</h3>
+        <p>Animal nocturn, retras și curios.</p>
+      </div>
+      <div class="animal">
+        <img src="imagini/fazan.jpg" alt="Fazan" />
+        <h3>Fazan</h3>
+        <p>Pasăre de vânătoare decorativă și agilă.</p>
+      </div>
+      <div class="animal">
+        <img src="imagini/prepelita.jpg" alt="Prepeliță" />
+        <h3>Prepeliță</h3>
+        <p>Mică, rapidă și întâlnită în zone agricole.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Site Vânătoare – Animale sălbatice</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarife – Vânătoare</title>
+  <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="language-bar">
+      <span>Limba:</span>
+      <a href="index_ro.html"><img src="imagini/ro.png" alt="Română" /></a>
+      <a href="index_hu.html"><img src="imagini/hu.png" alt="Magyar" /></a>
+      <a href="index_en.html"><img src="imagini/en.png" alt="English" /></a>
+    </div>
+    <div class="switch-container">
+      <button onclick="toggleDarkMode()">🌙 Mod întunecat</button>
+    </div>
+  </div>
+
+  <header>
+    <img src="imagini/antet.jpg" alt="Imagine antet" class="banner">
+    <h1>Tarife și servicii</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Acasă</a></li>
+      <li><a href="animale.html">Animalele noastre</a></li>
+      <li><a href="noutati.html">Noutăți</a></li>
+      <li><a href="tarife.html" class="active">Tarife</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="galerie">
+      <div class="animal">
+        <img src="imagini/cerb_dam.jpg" alt="Cerb lopătar">
+        <h3>Cerb lopătar</h3>
+        <p>Preț: 1500 RON</p>
+      </div>
+      <div class="animal">
+        <img src="imagini/caprioara.jpg" alt="Caprioara">
+        <h3>Caprioară</h3>
+        <p>Preț: 900 RON</p>
+      </div>
+      <div class="animal">
+        <img src="imagini/vulpe.jpg" alt="Vulpe">
+        <h3>Vulpe</h3>
+        <p>Preț: 500 RON</p>
+      </div>
+      <div class="animal">
+        <img src="imagini/bursuc.jpg" alt="Bursuc">
+        <h3>Bursuc</h3>
+        <p>Preț: 600 RON</p>
+      </div>
+      <div class="animal">
+        <img src="imagini/fazan.jpg" alt="Fazan">
+        <h3>Fazan</h3>
+        <p>Preț: 200 RON</p>
+      </div>
+      <div class="animal">
+        <img src="imagini/prepelita.jpg" alt="Prepeliță">
+        <h3>Prepeliță</h3>
+        <p>Preț: 150 RON</p>
+      </div>
+    </section>
+
+    <section class="tarife-servicii">
+      <h2>Servicii opționale</h2>
+      <ul>
+        <li>Cazare: 250 RON / noapte</li>
+        <li>Mese tradiționale: 100 RON / zi</li>
+        <li>Transport către locație: 120 RON</li>
+        <li>Închiriere echipament: 150 RON</li>
+        <li>Ghid profesionist: 200 RON / zi</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Site Vânătoare – Tarife și opțiuni</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>

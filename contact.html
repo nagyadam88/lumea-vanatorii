@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Vânătoare</title>
+  <link rel="stylesheet" href="css/stil.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <div class="language-bar">
+      <span>Limba:</span>
+      <a href="index_ro.html"><img src="imagini/ro.png" alt="Română" /></a>
+      <a href="index_hu.html"><img src="imagini/hu.png" alt="Magyar" /></a>
+      <a href="index_en.html"><img src="imagini/en.png" alt="English" /></a>
+    </div>
+    <div class="switch-container">
+      <button onclick="toggleDarkMode()">🌙 Mod întunecat</button>
+    </div>
+  </div>
+
+  <header>
+    <img src="imagini/antet.jpg" alt="Imagine antet" class="banner" />
+    <h1>Contactează-ne</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Acasă</a></li>
+      <li><a href="animale.html">Animalele noastre</a></li>
+      <li><a href="noutati.html">Noutăți</a></li>
+      <li class="dropdown">
+        <a href="tarife.html">Tarife ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Vânătoare</a></li>
+          <li><a href="#">Cazare</a></li>
+          <li><a href="#">Transport</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="contact-form">
+      <h2>Formular de Contact</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="nume">Nume:</label>
+          <input type="text" id="nume" name="nume" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="mesaj">Mesaj:</label>
+          <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Trimite" />
+          <input type="reset" value="Resetare" />
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Site Vânătoare – Contact</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
